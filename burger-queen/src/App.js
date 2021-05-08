@@ -1,13 +1,12 @@
 import React from "react";
 import './firebase'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import WaiterOrder from './components/WaiterOrder'
-
+import Order from './components/Order'
 
 function App() {
   return (
     <div>
-      <WaiterOrder/>
+      <Order/>
     </div>
   );
 }

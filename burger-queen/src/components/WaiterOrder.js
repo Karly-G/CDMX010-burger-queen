@@ -6,9 +6,9 @@ const WaiterOrder = () => {
     
     
     const [products, setProducts] = useState([]);
-    const [items, setItems] = useState();
-    const [view, setView] = useState(false);
-    const [order, setOrder] = useState([]);
+    const [items, setItems] = useState(false);
+  //  const [view, setView] = useState(false);
+   // const [order, setOrder] = useState([]);
   
     const getDatos =  () => {
         db.collection("productos ").onSnapshot((querySnapshot) => {
@@ -18,12 +18,12 @@ const WaiterOrder = () => {
         });
         setProducts(docs);
         console.log(docs);
-      }); 
+      });
     };
 
     const handlerSelectItems = (product) => {
-        setItems([product.nombre, product.precio]);
-        setView(true);
+        setItems([product.nombre]);
+     
     };
 
     useEffect(()=>{
@@ -40,13 +40,14 @@ const WaiterOrder = () => {
                     {product.nombre} {product.precio}
                 </button>
             ))}
-            {view &&
-                <div>
-                    {items[0]}  {items[1]}
-                </div> 
-            }  
+          
+                <li>
+                    {items}
+                </li> 
+     
         </div>
     )
 };   
 
 export default WaiterOrder;
+
