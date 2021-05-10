@@ -1,7 +1,8 @@
 import React from 'react'
 import CuentaItem from './CuentaItem'
 
-export default function Cuenta({data}) {
+export default function Cuenta({data, cuentaTotal}) {
+ console.log(data)
 
 
     return (
@@ -13,10 +14,12 @@ export default function Cuenta({data}) {
                         return <CuentaItem
                             key={i}
                             name={item.nombre}
+                            precio={item.precio}
                         />
                     })
                 }
             </ul>
+            <div>Total: {cuentaTotal} </div>
         </div>
     )
 }

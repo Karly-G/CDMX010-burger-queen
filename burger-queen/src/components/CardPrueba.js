@@ -3,6 +3,7 @@ import React from 'react';
 
 export default function CardPrueba({name, price, onClick}) {
 
+
     return (
       <button
          className="card-container"

@@ -15,7 +15,7 @@ export default function MenuButtons({data, onClick}) {
                                 key={i}
                                 name={cardItem.nombre}
                                 price={cardItem.precio}
-                                onClick={onClick}
+                                onClick={() => onClick(cardItem)}
                             />
                         ) 
                     })
