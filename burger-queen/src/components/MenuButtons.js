@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import CardPrueba from './CardPrueba'
+import CardButton from './CardButton'
 
 export default function MenuButtons({data, onClick}) {
    
@@ -11,7 +11,7 @@ export default function MenuButtons({data, onClick}) {
                 {
                     data && data.map((cardItem, i) =>{
                         return(
-                            <CardPrueba
+                            <CardButton
                                 key={i}
                                 name={cardItem.nombre}
                                 price={cardItem.precio}

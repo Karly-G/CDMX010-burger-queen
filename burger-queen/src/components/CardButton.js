@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default function CardPrueba({name, price, onClick}) {
+export default function CardButton({name, price, onClick}) {
 
 
     return (
