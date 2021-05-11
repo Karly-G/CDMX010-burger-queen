@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import CardButton from './CardButton'
 
 export default function MenuButtons({data, onClick}) {
-   
 
     return (
         <div>
@@ -22,7 +21,6 @@ export default function MenuButtons({data, onClick}) {
                 }
                 
             </div>
-      
                 
         </div>  
     )

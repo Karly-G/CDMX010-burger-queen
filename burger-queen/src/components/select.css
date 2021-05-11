@@ -1,0 +1,15 @@
+.header{
+    display:flex;
+    justify-content: space-evenly;
+    width: 220px;
+}
+
+select{
+    width: 85px;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.mesero{
+    width: 120px;
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import CuentaItem from './CuentaItem'
 
 export default function Cuenta({data, cuentaTotal}) {
- console.log(data)
+    console.log(data)
 
 
     return (

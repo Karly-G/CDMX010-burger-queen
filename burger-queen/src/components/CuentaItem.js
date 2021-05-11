@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function CuentaItem({name, precio}) {
+export default function CuentaItem({name, precio, categoria}) {
     
     return (
-        <li>
+        <li className='orderContainer'>
             {name}
             $ {precio}
         </li>

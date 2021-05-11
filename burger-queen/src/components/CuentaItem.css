@@ -1,0 +1,9 @@
+.orderContainer{
+    position: absolute;
+    width: 450px;
+    height: 800px;
+    left: 854px;
+    top: 67px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/burger-queen-e9b03.appspot.com/o/assets%2Flogo.png?alt=media&token=3077aaea-d85f-4d0d-ba86-6d79d4d61153');
+    background-repeat: no-repeat;
+}

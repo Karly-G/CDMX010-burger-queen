@@ -9,29 +9,27 @@ const WaiterOrder = () => {
     const [items, setItems] = useState(false);
   //  const [view, setView] = useState(false);
    // const [order, setOrder] = useState([]);
-  
+
     const getDatos =  () => {
         db.collection("productos ").onSnapshot((querySnapshot) => {
         const docs = [];
         querySnapshot.forEach((doc) => {
-          docs.push({ ...doc.data(), id: doc.id});
+            docs.push({ ...doc.data(), id: doc.id});
         });
         setProducts(docs);
         console.log(docs);
-      });
+        });
     };
 
     const handlerSelectItems = (product) => {
         setItems([product.nombre]);
-     
+    
     };
 
     useEffect(()=>{
         getDatos();   
     }, []);
-
-   
-
+    
     return (
         <div> 
             <h1>Desayuno </h1>
@@ -40,11 +38,11 @@ const WaiterOrder = () => {
                     {product.nombre} {product.precio}
                 </button>
             ))}
-          
+
                 <li>
                     {items}
                 </li> 
-     
+    
         </div>
     )
 };   
