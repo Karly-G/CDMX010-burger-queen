@@ -1,6 +1,7 @@
 import React from 'react'
 import CardButton from './CardButton'
 
+
 export default function MenuButtons({data, onClick}) {
 
     return (
@@ -8,7 +9,7 @@ export default function MenuButtons({data, onClick}) {
             <div className= 'menu' >
                 
                 {
-                    data && data.map((cardItem, i) =>{
+                    data && data.map((cardItem, i,) =>{
                         return(
                             <CardButton
                                 key={i}
@@ -19,6 +20,7 @@ export default function MenuButtons({data, onClick}) {
                         ) 
                     })
                 }
+               
                 
             </div>
                 

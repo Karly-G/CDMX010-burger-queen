@@ -8,6 +8,8 @@ import Backdrop from './Backdrop'
 
 export default function Order() {
     const getData = useGetData();
+
+
     const [list, setList] = useState([]);
     const [total, setTotal] = useState(0);
      const [modalOpen, setModalOpen] = useState(false);
@@ -30,8 +32,7 @@ export default function Order() {
         } 
         setTotal(suma)
     }
-
-   
+  
 
     const handleAdd=()=>{
       setModalOpen(true)
@@ -61,10 +62,12 @@ export default function Order() {
                 />    
             </div>    
             <div>
-                <Cuenta
-                    data={list}
-                    cuentaTotal={total}
-                />
+                    <Cuenta 
+                        data={list}
+                        cuentaTotal={total}
+                    
+                    />
+                    
             </div>
         
       

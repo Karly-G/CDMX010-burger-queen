@@ -1,11 +1,13 @@
 import React from 'react'
 
-export default function CuentaItem({name, precio, categoria}) {
+export default function CuentaItem({name, precio}) {
     
     return (
-        <li className='orderContainer'>
-            {name}
-            $ {precio}
+        <li >
+            {name} 
+            {' '}
+            ${precio}
+       
         </li>
     )
 }

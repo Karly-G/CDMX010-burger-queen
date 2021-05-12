@@ -4,6 +4,7 @@ import {db} from '../../firebase'
 export const useGetData = () => { 
     let [menuCards, setMenuCards] = useState([]);
 
+
     const fetchData = async () => {
         const res = db.collection("productos ")
         const data = await res.get()
@@ -19,11 +20,13 @@ export const useGetData = () => {
         )
 
     }
+
     useEffect(() => {
-        fetchData()       
+        fetchData()     
 
     }, [])
 
+    
      //console.log(menuCards);
      return menuCards
 
